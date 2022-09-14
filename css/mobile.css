@@ -1,3 +1,4 @@
+
 .header {
     width: 100%;
     color: #FFF;
@@ -29,7 +30,18 @@
 }
 
 .navbar-list.active {
-    background-color: rgba(38, 110, 243, 0.75);
+    background-color: rgba(38, 110, 243, 0.9);
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    top: 14vh;
+    width: 100vw;
+    transform: translateY(0%);
+    visibility: visible;
+}
+
+.navbar-list.white {
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     flex-direction: column;
     list-style: none;
@@ -47,7 +59,8 @@
 }
 
 .navbar-links.active {
-    color: #FFF;
+    color: #266ef3;
+    background-color: #FFF;
 }
 
 .bottom_animation::after {
@@ -83,6 +96,7 @@
 
 .containerTt {
     width: 100%;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -149,6 +163,14 @@
     left: 0;
 }
 
+.prevention-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
 .ct-ul-symptoms {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -202,8 +224,6 @@
 }
 
 .prevention-info-box {
-    display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -300,6 +320,7 @@
     color: #000;
     font-size: 12px;
     font-style: italic;
+    padding-bottom: 20px;
 }
 
 .text {

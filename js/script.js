@@ -1,4 +1,5 @@
 const navbar = document.getElementById("nav"),
+    navList = document.getElementById("navbar-list"),
     title = document.getElementById("title"),
     links = document.querySelectorAll(".navbar-links"),
     bottomAnimation = document.querySelectorAll(".bottom_animation"),
@@ -7,6 +8,7 @@ const navbar = document.getElementById("nav"),
 const ativarScroll = () => {
 
     navbar.classList.toggle("active", scrollY > 0);
+    // navList.classList.toggle("white", scrollY > 0);
     title.classList.toggle("active", scrollY > 0);
 
     links.forEach((e) => {
@@ -19,7 +21,7 @@ const ativarScroll = () => {
 }
 
 const ativarAnimate = () => {
-    const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+    const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
 
     target.forEach(e => {
         if (windowTop > e.offsetTop) {
@@ -29,6 +31,8 @@ const ativarAnimate = () => {
         }
     })
 }
+
+
 
 
 window.addEventListener("scroll", _.debounce(ativarScroll, 80));

@@ -9,6 +9,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 14vh;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -85,7 +86,6 @@ body::-webkit-scrollbar-thumb {
 
 .logo-menu {
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
@@ -190,8 +190,6 @@ a {
 }
 
 .home-container {
-    display: block;
-    position: relative;
     flex-direction: row;
     justify-content: center;
     text-align: justify;
@@ -262,9 +260,6 @@ a {
 }
 
 .container {
-    display: block;
-    position: relative;
-    height: auto;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
@@ -273,7 +268,6 @@ a {
 }
 
 .containerTt {
-    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -350,8 +344,6 @@ a {
 }
 
 .origin-info {
-    display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -360,7 +352,6 @@ a {
 
 .half {
     display: inline-block;
-    position: relative;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -372,7 +363,6 @@ a {
 
 .half-alt{
     display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
@@ -383,7 +373,6 @@ a {
 
 .complete {
     display: inline-block;
-    position: relative;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -464,7 +453,6 @@ a {
 
 .about-info {
     display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -474,7 +462,6 @@ a {
 }
 
 .ct-subInfo {
-    display: inline-block;
     flex-direction: row;
     justify-content: center;
     text-align: justify;
@@ -489,7 +476,6 @@ a {
 }
 
 .ct-subInfo-red {
-    display: inline-block;
     flex-direction: row;
     justify-content: center;
     text-align: justify;
@@ -515,7 +501,6 @@ a {
 
 .symptoms-info {
     display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -561,7 +546,6 @@ a {
 
 .transmission-info {
     display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -572,7 +556,6 @@ a {
 
 .prevention-info {
     display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -582,8 +565,6 @@ a {
 }
 
 .prevention-info-box {
-    display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -626,7 +607,6 @@ a {
 
 .treatment-info {
     display: flex;
-    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -642,7 +622,6 @@ a {
 
 .ct-footer-info {
     display: flex;
-    position: relative;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
