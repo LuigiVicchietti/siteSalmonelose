@@ -98,6 +98,10 @@ body::-webkit-scrollbar-thumb {
     margin-right: 10%;
 }
 
+.header-img-mobile {
+    display: none;
+}
+
 a {
     color: #FFF;
     text-decoration: none;
@@ -388,6 +392,13 @@ a {
     padding-bottom: 10px;
 }
 
+.salmonella-img {
+    max-width: 470px;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .text-ref {
     color: #000;
     font-size: 15px;
@@ -613,6 +624,26 @@ a {
     align-items: center;
     padding: 5vw;
     margin-bottom: 20px;
+}
+
+.ref-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 20px;
+}
+
+.text-ref-alt {
+    color: #000;
+    font-size: 25px;
+    padding-bottom: 35px;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .ct-footer {

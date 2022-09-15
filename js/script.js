@@ -1,5 +1,7 @@
 const navbar = document.getElementById("nav"),
     navList = document.getElementById("navbar-list"),
+    navItens = document.querySelectorAll(".navbar-itens"),
+    menuMobile = document.getElementById("menuMobile"),
     title = document.getElementById("title"),
     links = document.querySelectorAll(".navbar-links"),
     bottomAnimation = document.querySelectorAll(".bottom_animation"),
@@ -7,20 +9,6 @@ const navbar = document.getElementById("nav"),
 
 const ativarScroll = () => {
 
-    navbar.classList.toggle("active", scrollY > 0);
-    // navList.classList.toggle("white", scrollY > 0);
-    title.classList.toggle("active", scrollY > 0);
-
-    links.forEach((e) => {
-        e.classList.toggle("active", scrollY > 0);
-    })
-
-    bottomAnimation.forEach((e) => {
-        e.classList.toggle("active", scrollY > 0);
-    })
-}
-
-const ativarAnimate = () => {
     const windowTop = window.pageYOffset + (window.innerHeight * 0.75);
 
     target.forEach(e => {
@@ -30,13 +18,32 @@ const ativarAnimate = () => {
             e.classList.remove("animate");
         }
     })
+
+    navbar.classList.toggle("active", scrollY > 0);
+    title.classList.toggle("active", scrollY > 0);
+
+    navItens.forEach(e => {
+        e.classList.toggle("active", scrollY > 0);
+    })
+
+    links.forEach((e) => {
+        e.classList.toggle("active", scrollY > 0);
+    })
+
+    bottomAnimation.forEach((e) => {
+        e.classList.toggle("active", scrollY > 0);
+    })
+
+    if (scrollY === 0) {
+        menuMobile.setAttribute("src", "./assets/img/menu-white.png")
+    } else {
+        menuMobile.setAttribute("src", "./assets/img/menu-blue.png")
+    }
 }
 
-
-
+const abrirMenu = () => {
+    navList.classList.toggle("active")
+}
 
 window.addEventListener("scroll", _.debounce(ativarScroll, 80));
-window.addEventListener("scroll", _.debounce(ativarAnimate, 80));
-
-window.addEventListener("scroll", ativarScroll);
-window.addEventListener("scroll", ativarAnimate);
+menuMobile.addEventListener("click", abrirMenu);
