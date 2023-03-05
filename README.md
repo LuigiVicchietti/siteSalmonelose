@@ -17,6 +17,6 @@ Tarefa interdiciplinar criada para o 3º bimestre de 2022 do curso de Desenvolvi
 
 #
 
-- 📌Finalizado.
+- 📌Semi-Finalizado.
 - 🛠 Site responsivo criado sem uso de frameworks. Totalmente feito em HTML, CSS e JS puro.
 - 🔗 https://luigivicchietti.github.io/siteSalmonelose/
